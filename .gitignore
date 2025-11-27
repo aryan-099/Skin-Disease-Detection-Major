@@ -1,0 +1,33 @@
+# DATASETS
+data/
+data/raw/
+*.jpg
+*.jpeg
+*.png
+*.zip
+*.tar
+*.gz
+
+# MODELS & LARGE ARTIFACTS
+*.h5
+*.keras
+*.tflite
+saved_model.pb
+**/variables/**
+**/Major_savedmodel_v1/**
+**/Major_savedmodel/**
+
+# OUTPUTS (ignore large files, allow small png plots)
+outputs/**/*.h5
+outputs/**/*.zip
+!outputs/*.png
+
+# ENV & EDITOR
+.ipynb_checkpoints/
+__pycache__/
+env/
+venv/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
